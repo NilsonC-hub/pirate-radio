@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#18231e"><link rel="icon" href="/pirate-radio/favicon.svg">
+  <title>Pirate Radio — The long way home</title>
+  <script type="module" crossorigin src="/pirate-radio/assets/index-CvkZyC3N.js"></script>
+  <link rel="modulepreload" crossorigin href="/pirate-radio/assets/modulepreload-polyfill-P2Xu9kJm.js">
+  <link rel="modulepreload" crossorigin href="/pirate-radio/assets/ticket-selection-DjkN07SE.js">
+  <link rel="modulepreload" crossorigin href="/pirate-radio/assets/ticket-handoff-DUTYQS3S.js">
+  <link rel="stylesheet" crossorigin href="/pirate-radio/assets/index-D2vICQ1F.css">
+</head>
+<body>
+  <main class="screen" id="screen" data-mode="road" aria-label="An automatic forest drive with a radio, newspaper and road map">
+    <canvas id="landscape" tabindex="0" aria-label="Drag to look around. Click the radio, newspaper or glovebox to move closer."></canvas>
+    <div class="curtain opening-layer" aria-hidden="true"></div>
+    <div class="film-vignette opening-layer" aria-hidden="true"></div>
+    <div class="film-words opening-layer" aria-hidden="true"><p class="sentence"></p><p class="film-title">The long way home</p></div>
+    <div class="journey-slate opening-layer" aria-hidden="true" hidden><p class="journey-date">20 September 1968</p><p class="journey-place">Oxfordshire, England</p></div>
+    <div class="film-grain opening-layer" aria-hidden="true"></div><div class="film-breath opening-layer" aria-hidden="true"></div>
+    <button id="begin-drive" class="begin-drive opening-layer">Begin the drive</button>
+    <button id="radio-switch" class="object-switch opening-layer" aria-label="Switch on the radio" hidden><svg class="radio-leader" viewBox="0 0 70 48" aria-hidden="true"><path d="M49.6 27.6 L26 4 H2"/></svg><span class="radio-dot" aria-hidden="true"></span><span class="radio-label">Radio</span></button>
+    <button id="wiper-switch" class="weather-switch" aria-label="Switch on the wipers" aria-pressed="false" hidden><svg class="weather-leader interaction-leader" width="1" height="1" aria-hidden="true"><path/><path/></svg><span class="weather-dot" aria-hidden="true"></span><span class="weather-label interaction-label">Wipers</span></button>
+    <button id="lamp-switch" class="weather-switch" data-side="right" aria-label="Switch on the headlamps" aria-pressed="false" hidden><svg class="weather-leader interaction-leader" width="1" height="1" aria-hidden="true"><path/><path/></svg><span class="weather-dot" aria-hidden="true"></span><span class="weather-label interaction-label">Headlamps</span></button>
+    <p id="weather-prompt" class="weather-prompt" role="status" aria-live="polite" hidden></p>
+    <p id="interaction-prompt" class="interaction-prompt" role="status" aria-live="polite" hidden></p>
+    <div id="chapter-dissolve" class="chapter-dissolve" aria-hidden="true" hidden></div>
+    <button id="radio-entry" class="radio-entry" aria-label="Move closer to the radio" disabled>
+      <span class="entry-dot" aria-hidden="true"></span><span>Radio</span>
+    </button>
+    <button id="cabin-entry" class="radio-entry cabin-entry" aria-label="Look at the passenger seat and glovebox" disabled>
+      <span class="entry-dot" aria-hidden="true"></span><span>Cabin</span>
+    </button>
+    <button id="back-road" class="back-road" hidden>Back to the road</button>
+    <button id="outside-entry" class="outside-entry radio-entry" aria-expanded="false" aria-controls="outside-controls" disabled hidden>Outside</button>
+    <section id="outside-controls" class="outside-controls" aria-label="Lights and weather" hidden>
+      <div class="outside-heading"><p>The long way home</p><button id="outside-close" aria-label="Close outside controls">Close</button></div>
+      <button id="headlamps" aria-pressed="false">Headlamps <span>Off</span></button>
+      <button id="wipers" aria-pressed="false">Wipers <span>Off</span></button>
+      <p class="outside-hint">L switches the headlamps. W switches the wipers.</p>
+      
+      <p class="outside-hint">A passing shower. Clear skies, then the evening draws in.</p>
+    </section>
+    <div id="paper-ui" class="paper-ui" inert aria-hidden="true">
+      <button id="newspaper-pick" class="paper-pick" aria-label="Pick up the newspaper from the passenger seat"><span class="point" aria-hidden="true"></span><svg class="paper-leader interaction-leader" width="1" height="1" aria-hidden="true"><path/><path/></svg><span class="paper-label interaction-label">Pick up newspaper</span></button>
+      <button id="map-pick" class="paper-pick" aria-label="Open the glovebox and take out the road map"><span class="point" aria-hidden="true"></span><svg class="paper-leader interaction-leader" width="1" height="1" aria-hidden="true"><path/><path/></svg><span class="paper-label interaction-label">Open road map</span></button>
+    </div>
+    <div class="paper-actions">
+      <button id="paper-zoom" class="paper-zoom" hidden>Read closer</button>
+      <button id="paper-flip" class="paper-flip" aria-label="Turn the newspaper to the reverse side" aria-pressed="false" hidden>Turn over</button>
+    </div>
+    <p id="paper-hint" class="paper-hint" aria-hidden="true">Scroll to read closer. Drag to move across the paper.</p>
+    <div id="near-ui" class="near-ui" inert aria-hidden="true">
+      <button id="volume-knob" class="knob-control volume-control" aria-label="Press to switch on the radio. Drag or scroll to adjust volume." aria-pressed="false" disabled>
+        <span class="point" aria-hidden="true"></span>
+        <svg class="leader" viewBox="0 0 110 58" aria-hidden="true"><path d="M90 37 L62 8 H2"/></svg>
+        <span class="knob-label">Power / Volume</span>
+      </button>
+      <button id="tuning-knob" class="knob-control tuning-control" role="slider" aria-label="Tune the car radio" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0" aria-valuetext="Folk Alley" disabled>
+        <span class="point" aria-hidden="true"></span>
+        <svg class="leader" viewBox="0 0 110 58" aria-hidden="true"><path d="M20 37 L48 8 H108"/></svg>
+        <span class="knob-label">Tuning</span>
+      </button>
+      <div id="station-list" class="station-list" aria-label="Choose a live station"></div>
+      <div id="readout" class="programme readout" aria-live="polite" aria-atomic="true"></div>
+    </div>
+    <div id="programme-caption" class="programme programme-caption" aria-live="polite" aria-atomic="true" aria-hidden="true"></div>
+    <div id="ending-film" class="ending-film" hidden aria-hidden="true">
+      <div id="ending-curtain" class="curtain"></div><div class="film-vignette"></div>
+      <div class="film-words"><p class="sentence"></p></div>
+      <div class="film-grain"></div><div class="film-breath"></div>
+    </div>
+    <div id="ending-slate" class="journey-slate ending-slate" hidden><p class="journey-date"></p><p class="journey-place">One hour later</p></div>
+    <button id="ending-action" class="object-switch ending-action" hidden><svg class="radio-leader interaction-leader" width="1" height="1" aria-hidden="true"><path/><path/></svg><span class="radio-dot" aria-hidden="true"></span><span class="radio-label interaction-label"><span class="cue-title">Switch off the radio</span><small class="cue-detail"></small></span></button>
+    <div id="ending-credits" class="ending-credits" hidden><h1 class="film-title">The long way home</h1><p class="sentence">The End</p><button id="drive-again" hidden>Drive again</button></div>
+    <p id="ending-announcement" class="ending-announcement" role="status" aria-live="polite"></p>
+    <div class="journey-bar" id="journey-bar">
+      <button class="chapter-advance radio-entry" id="chapter-advance" hidden disabled><span>Continue</span><svg viewBox="0 0 24 16" aria-hidden="true"><path d="M1 8h21m-6-6 6 6-6 6"/></svg></button>
+    </div>
+    <div id="loading" class="loading" role="status"><p id="load-message">Loading the forest drive…</p></div>
+  </main>
+  
+</body>
+</html>

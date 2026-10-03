@@ -1,0 +1,70 @@
+{
+  "source": "/assets/roadtrip/cars/db5/db5-glovebox.gltf",
+  "sourcePrimitive": "BodyStaticGeometry / DB5MI_Dashboard1",
+  "method": "Barycentric evaluation of original TEXCOORD_0 triangles. Needle centres match the authored main gauge atlas.",
+  "gauges": [
+    {
+      "name": "speed",
+      "center": [
+        0.2476278515177604,
+        0.8857195862123178,
+        -0.4913557197730536
+      ],
+      "uvCenter": [
+        0.244140625,
+        0.759765625
+      ],
+      "metersPerPixelU": [
+        0.0007295795578017072,
+        1.3200042905170406e-05,
+        -5.690485058829076e-07
+      ],
+      "metersPerPixelV": [
+        -1.0751213485193922e-05,
+        0.0007283193004866684,
+        3.603828276823595e-05
+      ],
+      "normalTowardDriver": [
+        0.0016727249095351414,
+        -0.04939626760212148,
+        0.9987778585543216
+      ],
+      "zeroAngle": -2.1716516930017304,
+      "sweepAngle": -4.948833176033477,
+      "maxValue": 180,
+      "pointerLengthPixels": 43
+    },
+    {
+      "name": "rpm",
+      "center": [
+        0.43018748613698654,
+        0.8849870328258215,
+        -0.49138925786809867
+      ],
+      "uvCenter": [
+        0.7578125,
+        0.759765625
+      ],
+      "metersPerPixelU": [
+        0.0007547960897987371,
+        2.0513899183871585e-05,
+        -5.663545633582956e-07
+      ],
+      "metersPerPixelV": [
+        -3.162049280861501e-05,
+        0.0007479556379009322,
+        3.787026078265754e-05
+      ],
+      "normalTowardDriver": [
+        0.0021212599352631216,
+        -0.05047735651676862,
+        0.9987229529430901
+      ],
+      "zeroAngle": -2.5354573225992922,
+      "sweepAngle": -4.4645316445234675,
+      "maxValue": 6000,
+      "pointerLengthPixels": 41
+    }
+  ],
+  "dashboardTriangles": 470
+}
