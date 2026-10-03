@@ -1,4 +1,4 @@
-﻿# Pirate Radio
+# Pirate Radio
 
 [Open the experience](https://NilsonC-hub.github.io/pirate-radio/)
 
