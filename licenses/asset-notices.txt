@@ -1,0 +1,34 @@
+Pirate Radio — third-party asset notices
+
+The following attributions and license terms apply to incorporated assets.
+These notices do not imply endorsement by their creators.
+
+[UPDATE] Dirt Road Through Forest — 99.Miles
+Source: https://sketchfab.com/3d-models/update-dirt-road-through-forest-c4676cdf7715484382400ff63faffd45
+Creator: https://sketchfab.com/99.Miles
+License: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+Adapted for the interactive scene.
+
+1964 Aston Martin DB5 Vantage — Ddiaz Design
+Source: https://sketchfab.com/3d-models/1964-aston-martin-db5-vantage-dc926ee59c5b4556a7a0c05e39e22077
+Creator: https://sketchfab.com/ddiaz-design
+License: CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/
+Scale, materials and moving parts adapted. The adapted vehicle assets and
+their scene captures retain CC BY-NC-SA 4.0. The source description also
+credits Racing Master and Vertex Warehouse: https://www.vertex-warehouse.com/
+
+Mini Cooper Mk1 — Ivan_WSK
+Source: https://sketchfab.com/3d-models/mini-cooper-mk1-0b032262d5a34360ae55390eb23b36f7
+Creator: https://sketchfab.com/ivan-wsk
+License: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+Scale, glazing and lights adapted.
+
+Oak tree — massive-graphisme
+Source: https://sketchfab.com/3d-models/oak-tree-3dc59560f2d24345bdbe65c44636453b
+License: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+Scale, materials and geometry adapted.
+
+Hydrangeas — Yoshikazu Takayama
+Source: https://sketchfab.com/3d-models/hydrangeas-a4347cb0c79247f1995f280b4bc7b963
+License: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+Scale, materials and geometry adapted.
